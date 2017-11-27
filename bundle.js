@@ -87,7 +87,7 @@
 		var url = 'https://newsapi.org/v2/everything?sources=' + resourceID + '&apiKey=' + apiKey;
 		var req = new Request(url);
 
-		fetch(req).then(function (response) {
+		fetch(req, { mode: 'cors' }).then(function (response) {
 			response.json().then(function (itemsData) {
 				(0, _renderNews2.default)(itemsData);
 			});
