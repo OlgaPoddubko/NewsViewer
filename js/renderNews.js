@@ -7,11 +7,11 @@ export default function renderNews(resp) {
 function renderItem (itemData) {
 	let contentDiv = document.querySelector('.content');
 
-	  let item = document.createElement('div');
+	let item = document.createElement('div');
     item.className = "item";
     contentDiv.appendChild(item);
 
-	  let imgDiv = document.createElement('div');
+	let imgDiv = document.createElement('div');
     imgDiv.className = "item-img";
     item.appendChild(imgDiv);
 
