@@ -1,13 +1,11 @@
 let path = require('path');
 
 module.exports = {
-  //context: path.resolve(__dirname, "app"),
 
     entry:[
-         './js/main.js' // "./main.js"
+         './js/main.js'
     ],
     output: {
-      //path: path.resolve(__dirmane, "dist"),
         filename: 'bundle.js'
     },
 

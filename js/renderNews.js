@@ -1,3 +1,4 @@
+import '../css/content.css';
 import convertDate from './convertDate';
 
 export default function renderNews(resp) {

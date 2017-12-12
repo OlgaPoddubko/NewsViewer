@@ -8,14 +8,17 @@ const resourceIDs = {
 	'Time': 'time',
 };
 
+function changeAppearance(elem) {
+    let formerSelected = document.querySelector('.selected');
+    if (formerSelected) {
+        formerSelected.classList.remove('selected');
+        document.querySelector('.content').innerHTML = ``;
+    }
+    document.querySelector('.current-resource').innerHTML = `${elem.innerHTML} news:`;
+    elem.classList.add('selected');
+}
+
 export default function changeNews(e) {
-
-  let formerSelected = document.querySelector('.selected');
-  formerSelected.classList.remove('selected');
-  e.target.classList.add('selected');
-
-  document.querySelector('.current-resource').innerHTML = `${e.target.innerHTML} news:`;
-  document.querySelector('.content').innerHTML = ``;
-
+  changeAppearance(e.target);
   getData(resourceIDs[e.target.innerHTML]);
 }
