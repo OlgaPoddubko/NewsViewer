@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js",
     "prod": "webpack --config webpack.config.prod.js",
-    "base": "webpack --config webpack.config.base.js"
+    "base": "webpack-dev-server --config webpack.config.base.js"
   },
   "author": "",
   "license": "ISC",

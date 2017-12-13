@@ -9,6 +9,10 @@ module.exports = merge(base, {
         hot: true,
         host: "localhost",
         port: 3000,
+        watchOptions: {
+            aggregateTimeout: 100,
+            ignored: /node_modules/
+        }
     },
     plugins: [new webpack.HotModuleReplacementPlugin()]
 });
