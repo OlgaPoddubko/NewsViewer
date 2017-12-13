@@ -6,7 +6,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
   </head>
   <body>
     <header>
@@ -15,6 +14,8 @@
           <a href=""> <img src="img/logo.png" alt="News Viewer"> </a>
         </div>
         <nav>
+        	<h2 class="select-resource">Please select a resource:</h2>
+
           <div class="resource selected">BBC</div>
           <div class="resource">CNN</div>
           <div class="resource">Fox</div>
@@ -24,10 +25,11 @@
       </div>
     </header>
     <main>
-    	<h2 class="current-resource">Please select a resource</h2>
+    	<h2 class="current-resource"></h2>
+      <div class="show-news"><span>Show news</span></div>
       <div class="content"></div>
     </main>
 
-    <script src="bundle.js"></script>
+    <script src="main.bundle.js"></script>
   </body>
 </html>

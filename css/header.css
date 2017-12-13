@@ -102,3 +102,22 @@ nav {
 		font-size: 14px;
 	}
 }
+
+.select-resource {
+  margin-left: 50px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.show-news {
+		width: 100px;
+		margin-top: 20px;
+		padding: 10px;
+		border-radius: 3px;
+		background: #49c757;
+		color: #ffffff;
+}
+.show-news:hover {
+		background: #49C712;
+}
