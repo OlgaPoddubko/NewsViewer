@@ -8,6 +8,11 @@ export default function convertDate(str) {
     if (month < 10) {
       month = `0${month}`;
     }
+    let hour = date.getHours();
+    let min = date.getMinutes();
+    if (min < 10) {
+      min = `0${min}`;
+    }
 
-    return `${day}.${month}.${date.getFullYear()}`;
+    return `${day}.${month}.${date.getFullYear()} ${hour}:${min}`;
 }
